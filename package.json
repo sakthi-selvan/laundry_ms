@@ -17,12 +17,14 @@
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-select": "^2.2.6",
+    "@types/qrcode": "^1.5.6",
     "better-sqlite3": "^12.4.1",
     "date-fns": "^4.1.0",
     "drizzle-orm": "^0.44.7",
     "exceljs": "^4.4.0",
     "lucide-react": "^0.548.0",
     "pdfkit": "^0.17.2",
+    "qrcode": "^1.5.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-hook-form": "^7.65.0",
@@ -53,9 +55,22 @@
     "appId": "in.laundrydesk.app",
     "productName": "Laundry Desk",
     "asar": true,
-    "files": ["dist/**/*", "dist-electron/**/*", "package.json"],
-    "directories": { "output": "release", "buildResources": "build" },
-    "win": { "target": ["nsis"], "artifactName": "LaundryDesk-${version}-Setup.${ext}" },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "build/NotoSansTamil.ttf",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "artifactName": "LaundryDesk-${version}-Setup.${ext}"
+    },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,

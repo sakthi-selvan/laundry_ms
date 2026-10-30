@@ -2,6 +2,16 @@
 
 Windows desktop management software for a laundry and dry-cleaning shop. It uses Electron, React, TypeScript, SQLite, Drizzle schema definitions, Zod IPC validation, PDFKit receipts, ExcelJS exports, and Electron Builder.
 
+## Tamil Nadu features
+
+- English/தமிழ் interface switch plus English, Tamil, or bilingual receipts and WhatsApp messages
+- Order-specific UPI QR codes containing the exact outstanding balance
+- Per-piece and per-kilogram price lists with decimal weight billing
+- Customer membership plans, automatic percentage discounts, validity periods, and prepaid wallets
+- Manual WhatsApp Click-to-Chat only; staff review and send every message
+
+Configure the shop UPI ID and customer communication language under **Settings**. Memberships can be activated from the customer list. Existing databases are migrated automatically; historical orders remain piece-based and retain their recorded prices.
+
 ## Development
 
 ```bash
