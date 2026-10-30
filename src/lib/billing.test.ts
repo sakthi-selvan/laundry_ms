@@ -1,0 +1,2 @@
+import {describe,expect,it} from 'vitest';import {calculateBill} from './billing';
+describe('calculateBill',()=>{it('calculates multiple items, discount and advance',()=>{expect(calculateBill([{quantity:2,unitPrice:30},{quantity:1,unitPrice:75}],15,40)).toEqual({subtotal:135,total:120,balance:80})});it('never creates negative totals or balances',()=>{expect(calculateBill([{quantity:1,unitPrice:10}],20,50)).toEqual({subtotal:10,total:0,balance:0})});it('rounds monetary values to paise',()=>{expect(calculateBill([{quantity:3,unitPrice:10.115}],0,0).subtotal).toBe(30.35)})});

@@ -1,0 +1,1 @@
+export function calculateBill(lines:Array<{quantity:number;unitPrice:number}>,discount:number,paid:number){const subtotal=Math.round(lines.reduce((sum,x)=>sum+x.quantity*x.unitPrice,0)*100)/100;const total=Math.max(0,Math.round((subtotal-Math.max(0,discount))*100)/100);const balance=Math.max(0,Math.round((total-Math.max(0,paid))*100)/100);return{subtotal,total,balance};}
