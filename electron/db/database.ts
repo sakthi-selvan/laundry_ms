@@ -11,7 +11,7 @@ const phone = (value: string) => value.replace(/\D/g, '').replace(/^91(?=\d{10}$
 const hashPassword = (password: string) => { const salt = randomBytes(16).toString('hex'); return `${salt}:${scryptSync(password, salt, 64).toString('hex')}`; };
 const verifyPassword = (password: string, stored: string) => { const [salt, key] = stored.split(':'); if (!salt || !key) return false; return timingSafeEqual(Buffer.from(key, 'hex'), scryptSync(password, salt, 64)); };
 
-const defaults: ShopSettings = { shopName: 'Laundry Desk', address: 'Your shop address', phone: '', currency: '₹', receiptFooter: 'Thank you for choosing us!', terms: 'Please check garments at collection. Unclaimed garments are held for 30 days.', backupFolder: '', autoBackup: true, communicationLanguage: 'both', upiId: '', upiPayeeName: 'Laundry Desk', whatsappAutomationEnabled: false, whatsappAutoConfirmation: true, whatsappAutoReady: true };
+const defaults: ShopSettings = { shopName: 'Laundry Desk', address: 'Your shop address', phone: '', currency: '₹', receiptFooter: 'Thank you for choosing us!', terms: 'Please check garments at collection. Unclaimed garments are held for 30 days.', backupFolder: '', autoBackup: true, communicationLanguage: 'both', upiId: '', upiPayeeName: 'Laundry Desk', whatsappAutomationEnabled: false, whatsappAutoConfirmation: true, whatsappAutoReady: true, dropdownShortcuts: ['1','2','3','4','5','6','7','8','9'] };
 
 export class LaundryDatabase {
   readonly filePath: string;

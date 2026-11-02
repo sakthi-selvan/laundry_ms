@@ -9,6 +9,7 @@ Windows desktop management software for a laundry and dry-cleaning shop. It uses
 - Per-piece and per-kilogram price lists with decimal weight billing
 - Customer membership plans, automatic percentage discounts, validity periods, and prepaid wallets
 - Manual WhatsApp Click-to-Chat fallback plus optional local linked-device automation for consented transactional updates
+- Numbered keyboard shortcuts on every dropdown, configurable under Settings (defaults to 1–9)
 
 Configure the shop UPI ID and customer communication language under **Settings**. Memberships can be activated from the customer list. Existing databases are migrated automatically; historical orders remain piece-based and retain their recorded prices.
 
