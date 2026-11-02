@@ -1,8 +1,8 @@
 import {describe,expect,it} from 'vitest';
-import {createUpiUri} from './upi';
+import {createUpiUri} from './upi.js';
 
-const order={orderNumber:'LD-20261030-001',balance:245.5} as never;
-const settings={shopName:'செல்வம் Laundry',upiId:'selvam@upi',upiPayeeName:'Selvam Laundry'} as never;
+const order={orderNumber:'LD-20261030-001',balance:245.5} as any;
+const settings={shopName:'செல்வம் Laundry',upiId:'selvam@upi',upiPayeeName:'Selvam Laundry'} as any;
 
 describe('createUpiUri',()=>{
   it('encodes the exact order balance and reference',()=>{
