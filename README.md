@@ -10,6 +10,10 @@ Windows desktop management software for a laundry and dry-cleaning shop. It uses
 - Customer membership plans, automatic percentage discounts, validity periods, and prepaid wallets
 - Manual WhatsApp Click-to-Chat fallback plus optional local linked-device automation for consented transactional updates
 - Numbered keyboard shortcuts on every dropdown, configurable under Settings (defaults to 1–9)
+- Easy in-place order editing with automatic recalculation and payment-history protection
+- Admin-controlled print branding with company logo, optional GSTIN, contact details, footer and terms
+- Branded A4/80 mm bills with Save PDF and system Print actions
+- Formatted Excel reports with Summary, Daily Sales, Services and Payment Methods sheets
 
 Configure the shop UPI ID and customer communication language under **Settings**. Memberships can be activated from the customer list. Existing databases are migrated automatically; historical orders remain piece-based and retain their recorded prices.
 
